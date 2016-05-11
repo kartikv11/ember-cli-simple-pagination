@@ -15,8 +15,14 @@
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "Kartik Verma <kartx111@gmail.com>",
+  "author": "Kartik Verma",
   "license": "MIT",
+  "contributors": [
+    {
+      "name": "Kartik Verma",
+      "email": "kartx111@gmail.com"
+    }
+  ],
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "0.7.1",
@@ -40,7 +46,11 @@
     "loader.js": "^4.0.1"
   },
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "pagination",
+    "ember-cli-pagination",
+    "page-number",
+    "ember-pagination"
   ],
   "dependencies": {
     "ember-cli-babel": "^5.1.6"
