@@ -1,5 +1,7 @@
 # Ember-cli-simple-pagination
 
+[![Ember Observer Score](https://emberobserver.com/badges/ember-cli-simple-pagination.svg)](https://emberobserver.com/addons/ember-cli-simple-pagination)
+
 Simple Pagination Ember Component providing all basic pagination functionalities.
 - Uses [Material Design Lite](https://getmdl.io/index.html).
 
