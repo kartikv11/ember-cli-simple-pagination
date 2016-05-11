@@ -1,6 +1,7 @@
 # Ember-cli-simple-pagination
 
 Simple Pagination Ember Component providing all basic pagination functionalities.
+- Uses [Material Design Lite](https://getmdl.io/index.html).
 
 ## Installation
 
@@ -17,7 +18,7 @@ ember install ember-cli-simple-pagination
 ## Usage & Actions
 
 - `page_no` -- Initialize a Controller variable in who's template you want Pagination, e.g. `page_no: 1`
-- `change` -- Action that returns `currentPage` and `previousPage`, e.g.
+- `getByPageNumber` -- Action that returns `page_no` i.e. `the current page requested`, e.g.
 
 ```hbs
 {{page-numbers totalPages=pageCount currentPage=page_no}}
