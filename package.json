@@ -1,6 +1,6 @@
 {
   "name": "ember-cli-simple-pagination",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Simple Pagination Ember Component providing all basic pagination functionalities.",
   "directories": {
     "doc": "doc",
