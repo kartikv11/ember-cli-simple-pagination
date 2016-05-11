@@ -1,6 +1,6 @@
 # Ember-cli-simple-pagination
 
-This README outlines the details of collaborating on this Ember addon.
+Simple Pagination Ember Component providing all basic pagination functionalities.
 
 ## Installation
 
@@ -24,3 +24,4 @@ This README outlines the details of collaborating on this Ember addon.
 * `ember build`
 
 For more information on using ember-cli, visit [http://ember-cli.com/](http://ember-cli.com/).
+=======

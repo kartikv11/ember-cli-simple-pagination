@@ -1,0 +1,45 @@
+{{#unless hasZeroPages}}
+  <div class="pagination-centered">
+    <p>
+      {{#if canStepBackward}}
+        <button {{action "incrementPage" -1}} float='left' class='mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--colored' style="background: rgba(0,0,0,0.1)">
+          <i class="material-icons">navigate_before</i>
+        </button>
+      {{else}}
+        <button {{action "incrementPage" -1}} float='left' disabled="true" class='mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--colored'>
+          <i class="material-icons">navigate_before</i>
+        </button>
+      {{/if}}
+      <span>
+        {{#if hasPreviousPages}}
+            <a href="#" {{action "listPreviousPages" }} style="text-decoration: none;font-size:18px;color:#70708C;">...</a>
+        {{/if}}
+
+        {{#each pagesArray as |page|}}
+          {{#if (compare page currentPage operator="==")}}
+            <b style="font-weight: bold; font-size:20px;">{{page}}</b>
+          {{else}}
+            <a href="#" {{action "pageClicked" page}} style="font-size:18px;text-decoration: none;color:#70708C;">{{page}}</a>
+          {{/if}}
+        {{/each}}
+
+        {{#if hasNextPages}}
+            <a href="#" {{action "listNextPages" }} style="text-decoration: none;font-size:18px;color:#70708C;">...</a>
+        {{/if}}
+      </span>
+
+      {{#if canStepForward}}
+        <button {{action "incrementPage" 1}} float='right' class='mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--colored' style="background: rgba(0,0,0,0.1)">
+          <i class="material-icons">navigate_next</i>
+        </button>
+      {{else}}
+        <button {{action "incrementPage" -1}} float='right' disabled="true" class='mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-button--colored'>
+          <i class="material-icons">navigate_next</i>
+        </button>
+      {{/if}}
+      <span style="font-size:15px;">Page {{currentPage}} of {{totalPages}}</span>
+    </p>
+  </div>
+{{else}}
+  <p><i> Aww :( No Content present here!</i></p>
+{{/unless}}
